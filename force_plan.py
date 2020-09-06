@@ -7,7 +7,7 @@ import re
 s = sched.scheduler(time.time, time.sleep)
 list_command = "powercfg.exe -list"
 exec_command = "powercfg.exe /setactive "
-delay = 5
+delay = 30
 desired_plan_name="Balanced"
 guid_pattern = re.compile("(:\ .*?\ )")
 name_pattern = re.compile("(\([A-Za-z\ ]*\))")
